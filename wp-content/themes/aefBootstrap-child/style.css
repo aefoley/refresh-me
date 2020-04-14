@@ -1,0 +1,368 @@
+/*
+ Theme Name:   AEF Bootstrap Child Theme
+ Author: Ann Foley, adapted from Rachel Baker's Wordpress Bootstrap
+ Template:     aefBootstrap
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  aefBootstrap-child
+*/
+
+/* Headings
+--------------------------------------------- */
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
+    color:#222;
+}
+
+p, li {
+    font-size:16px;
+    line-height:22px;
+    color:#6f6f6f;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color:#6f6f6f;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', serif;
+    color:#6f6f6f;
+}
+
+h2 .brand {
+    color:#8b8b8b;
+    font-weight:normal;
+    font-size:80%;
+    margin-left:20px;
+}
+
+h2 a.brand:link, h2 a.brand:visited {
+    color:#727272 !important;
+    font-family: 'Lato', sans-serif;
+    text-transform:lowercase;
+}
+
+h2 a.brand:hover, h2 a.brand:active {
+     color:#d9534f !important;
+
+}
+
+h1 {
+    color: #ffbb00 ;
+     font-family: 'Lato', sans-serif;
+     font-weight:400;
+     text-transform:uppercase;
+     letter-spacing: .1em;
+     text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.65);
+    
+}
+
+
+
+a:link, a:visited {
+    color:#245776;
+}
+
+a:hover, a:active {
+    color:#d9534f;
+}
+
+p a:link, p a:visited {
+    color:#0088cc;
+    font-weight:700;
+}
+
+a:hover, a:active {
+    color:#d9534f;
+    font-weight:700;
+}
+
+
+
+
+.brandlogo {
+    width: 80px;
+    float:left;
+}
+
+.navbar-inner {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.navbar-relative-top .navbar-inner {
+    background-color:transparent;
+    border:none;
+    box-shadow:none;
+    background-image:none;
+    font-size:20px;
+    font-weight:300;
+    text-shadow:none;
+     color:#8b8b8b;
+}
+
+.navbar .nav {
+    float:right;
+}
+
+.dots {
+   background-image:url('https://annfoley.com/wp-content/themes/aefBootstrap/assets/img/bottom4.png'); 
+   height:10px;
+}
+
+.dots2 {
+   background-image:url('https://annfoley.com/wp-content/themes/aefBootstrap/assets/img/bottom4.png'); 
+   height:10px;
+   margin-top:4px;
+}
+
+hr {
+    border-top-color:#fcbe65;
+}
+
+.wpcf7-form-control {width:300px;}
+
+.gray {
+    background: #727272; /* Old browsers */
+    background: -moz-linear-gradient(top,  #727272 0%, #8b8b8b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#727272), color-stop(100%,#8b8b8b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #727272 0%,#8b8b8b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #727272 0%,#8b8b8b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #727272 0%,#8b8b8b 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #727272 0%,#8b8b8b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#727272', endColorstr='#8b8b8b',GradientType=0 ); /* IE6-9 */
+    color:#fff;
+    -webkit-box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.32);
+    box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.32);
+}
+
+.gray a:link, .gray a:visited {
+    color:#CCFAFD;
+    }
+
+.gray a:hover, .gray a:active {
+    color:#ffcccc;
+}
+
+.tint {
+    background-color:#f5f5f5;
+    -webkit-box-shadow: 0px 0px 41px -8px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 0px 41px -8px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 41px -8px rgba(0,0,0,0.3);
+}
+
+.content {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+/* Float Clearing
+--------------------------------------------- */
+
+.author-box:before,
+.clearfix:before,
+.entry-content:before,
+.entry:before,
+.footer-widgets:before,
+.nav-primary:before,
+.nav-secondary:before,
+.pagination:before,
+.site-container:before,
+.site-footer:before,
+.site-header:before,
+.site-inner:before,
+.widget:before,
+.wrap:before {
+    content: " ";
+    display: table;
+}
+
+.author-box:after,
+.clearfix:after,
+.entry-content:after,
+.entry:after,
+.footer-widgets:after,
+.nav-primary:after,
+.nav-secondary:after,
+.pagination:after,
+.site-container:after,
+.site-footer:after,
+.site-header:after,
+.site-inner:after,
+.widget:after,
+.wrap:after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+
+body.home .gray {
+    color:#fff;
+    padding-top:20px;
+    padding-bottom:20px;
+   }
+body.home .gray p {
+    color:#fff;
+    font-size:120%;
+    line-height:140%;
+    margin-top:20px;
+}
+
+
+.logorow {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition:    all 0.1s ease-in-out;
+    -ms-transition:     all 0.1s ease-in-out;
+    -o-transition:      all 0.1s ease-in-out;
+    transition:         all 0.1s ease-in-out;
+}
+
+.navbar .nav > li > a:link, .navbar .nav > li > a:visited{
+    text-shadow:none;
+    color:#8b8b8b;
+    font-weight:300;
+    text-transform:lowercase;
+}
+
+.navbar .nav > li > a:hover, .navbar .nav > li > a:active {
+    color: #d9534f;
+}
+
+.wpcf7-submit {
+    border-radius:20px;
+    border:none;
+    margin-top:20px;
+    padding:5px 15px;
+    background: #fcbe65; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fcbe65 0%, #ffbb00 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcbe65), color-stop(100%,#f5d270)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fcbe65 0%,#ffbb00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fcbe65 0%,#ffbb00 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fcbe65 0%,#ffbb00 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fcbe65 0%,#ffbb00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcbe65', endColorstr='#ffbb00',GradientType=0 ); /* IE6-9 */
+
+}
+
+#wpcf7-f92-p93-o1 td{
+    vertical-align: top;
+}
+
+img.wpcf7-captcha-captcha-1 {
+    width:;
+}
+
+
+
+/* Sticky footer //////////////////////////////////////////////////////////////////////////////*/
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .push {
+    height: 50px; /* '.push' must be the same height as 'footer' */
+}
+
+
+.box    {  
+        box-shadow:1px 1px 10px 0 rgba(0,0,0,.45);
+        margin-bottom:20px;
+        border-radius:5px;
+        overflow:hidden;
+        background-image:url(https://annfoley.com/wp-content/uploads/2015/06/go.jpg);
+        background-size:cover;      }
+
+
+.box:hover {
+    opacity:.5;
+   -webkit-box-shadow: 3px 0px 26px -5px rgba(0,0,0,0.37);
+    -moz-box-shadow: 3px 0px 26px -5px rgba(0,0,0,0.37);
+    box-shadow: 3px 0px 26px -5px rgba(0,0,0,0.37);
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.box:hover img {
+    opacity:.2;
+}
+
+#plus       {  font-family:Helvetica;
+               font-weight:900;
+               color:rgba(255,255,255,.85);
+               font-size:96px;}
+
+img.shadow {
+    -webkit-box-shadow: 3px 0px 26px -5px rgba(0,0,0,0.37);
+-moz-box-shadow: 3px 0px 26px -5px rgba(0,0,0,0.37);
+box-shadow: 3px 0px 26px -5px rgba(0,0,0,0.37);
+}
+
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  
+}
+@media (max-width: 767px) {
+    .dots, .gray {
+        margin-left:-30px;
+        margin-right:-30px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+    .row {
+        margin-left:-30px;
+        margin-right:-30px;;
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+    .row {
+        margin-left:-30px;
+        margin-right:-30px;;
+        padding-left:30px;
+        padding-right:30px;
+    }
+}
