@@ -19,31 +19,23 @@
 
   <body <?php body_class();?>>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a>
-        </div><!-- ./navbar-header -->
-           
+ <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="<?php bloginfo('url');?>">Offcanvas navbar</a>
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-          <?php
+
+     <?php
             wp_nav_menu( array(
                 'theme_location'    => 'header-menu',
                 'depth'             => 2,
                 'container'         => 'div',
-                'container_class'   => 'collapse navbar-collapse',
-                'container_id'      => 'navbar',
-                'menu_class'        => 'nav navbar-nav',
+                'container_class'   => 'navbar-collapse offcanvas-collapse',
+                'container_id'      => 'main_nav',
+                'menu_class'        => 'navbar-nav ml-auto',
                 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                 'walker'            => new wp_bootstrap_navwalker())
             );
         ?>
-
-      </div><!--/.Container -->
-    </nav>
+</nav>
