@@ -6,13 +6,13 @@
 
 <?php get_header();?>
   
-<div class="container">
+<div class="container pt-4">
     <div class="row">
         <div class="col-md-12">
 
             <?php if ( have_posts() ) : while ( have_posts() ) :  the_post(); ?>
                 
-                <div class="page-header">foo
+                <div class="page-header">
                 <h1 class="text-center"><?php the_title(); ?></h1>
                 </div>
 

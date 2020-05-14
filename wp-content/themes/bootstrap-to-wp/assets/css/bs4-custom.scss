@@ -12,14 +12,38 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 @import 'bootstrap';
+@import 'hamburgers'; 
 
-// body.logged-in .fixed-top {
-//   top:32px;
+/* Adjustment for admin bar
+-------------------------------------------------- */
 
-// }
+body.logged-in .fixed-top {
+  top:32px;
+}
 
-// html #wpadminbar{position:fixed}
+html #wpadminbar{position:fixed}
 
+/* Misc adjustmets
+-------------------------------------------------- */
+//removes blue cloud around button
+button:focus,button:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+//snugs caret for dropdown menu into its item
+.dropdown-toggle::after {
+  margin-left:0;
+}
+
+//smoother transition 
+a:hover {
+  transition: 0.3s;
+}
+
+.comment-form-comment label {
+  display:block;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -50,6 +74,10 @@ footer {
 
 ul#menu-main-menu>li>a{
   @extend .px-2;
+  color:#cdcdcd; 
+    &:hover {
+      color:#fff;
+    }
 }
 
 /* Off Canvas
@@ -71,7 +99,7 @@ body {
   }
   .offcanvas-collapse {
     position: fixed;
-    top: 56px; /* Height of navbar */
+    top: 100px; /* Height of navbar */
     bottom: 0;
     width: 102%;
     padding-right: 1rem;
@@ -87,6 +115,17 @@ body {
   .offcanvas-collapse.open {
     -webkit-transform: translateX(-1rem);
     transform: translateX(-1rem); /* Account for horizontal padding on navbar */
+    li {
+      text-align:right;
+    }
+  }
+
+  //cute animated hamburger icon
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {background-color:#cdcdcd;}
+  .hamburger.is-active .hamburger-inner, 
+  .hamburger.is-active .hamburger-inner::before, 
+  .hamburger.is-active .hamburger-inner::after {
+    background-color:#cdcdcd;
   }
 
 }
@@ -102,3 +141,12 @@ body {
 .lh-100 { line-height: 1; }
 .lh-125 { line-height: 1.25; }
 .lh-150 { line-height: 1.5; }
+
+
+/* Customize comments a little
+-------------------------------------------------- */
+
+#comments {
+  font-size: .8rem;
+  h2, h3 {font-size:1.2rem;}
+}
