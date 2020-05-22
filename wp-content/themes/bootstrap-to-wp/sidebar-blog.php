@@ -1,4 +1,4 @@
- <div class="col-md-3 sidebar">
+ <aside class="col-md-3 sidebar">
 
     <?php if ( ! dynamic_sidebar('blog')) : ?>
     
@@ -8,4 +8,4 @@
  <?php endif; ?>
 
 
-</div><!-- end col -->
+</aside><!-- end col -->

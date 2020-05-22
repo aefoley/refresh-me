@@ -13,7 +13,7 @@
     </div>
 
 
-    <div class="container">
+    <article class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
@@ -39,6 +39,6 @@
             ?>
         </div>
       </div>
-    </div>
+    </article>
 
 <?php get_footer();?>

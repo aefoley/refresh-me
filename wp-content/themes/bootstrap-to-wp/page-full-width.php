@@ -6,9 +6,9 @@
 
 <?php get_header();?>
   
-<div class="container pt-4">
+<main class="container pt-4">
     <div class="row">
-        <div class="col-md-12">
+        <article class="col-md-12">
 
             <?php if ( have_posts() ) : while ( have_posts() ) :  the_post(); ?>
                 
@@ -25,8 +25,8 @@
 
             <?php endif; ?>
 
-        </div><!-- end col -->
+        </article><!-- end col -->
     </div><!-- end row -->
-</div><!-- end container -->
+</main><!-- end container -->
 
 <?php get_footer();?>

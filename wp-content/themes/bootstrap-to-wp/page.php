@@ -1,32 +1,31 @@
 <?php get_header();?>
 
   
-<div class="container pt-4">
+<main class="container pt-4">
     <div class="row">
-        <div class="col-md-9">
+        <article class="col-md-9">
 
             <?php if ( have_posts() ) : while ( have_posts() ) :  the_post(); ?>
                 
-                <div class="page-header">
-                <h1><?php the_title(); ?></h1>
-                </div>
+                    <div class="page-header">
+                    <h1><?php the_title(); ?></h1>
+                    </div>
 
-                <?php the_content() ?>
-
+                    <?php the_content() ?>
         
             <?php endwhile; else: ?>
 
-                  <p>It looks like nothing was found at this location. Maybe try a search?></p>
-                <?php get_search_form(); ?>
+                    <p>It looks like nothing was found at this location. Maybe try a search?></p>
+            <?php get_search_form(); ?>
 
             <?php endif; ?>
-
-        </div><!-- end col -->
+                
+        </article><!-- end col -->
 
         <?php get_sidebar('page'); ?>
 
 
     </div><!-- end row -->
-</div><!-- end container -->
+</main><!-- end container -->
 
 <?php get_footer();?>
