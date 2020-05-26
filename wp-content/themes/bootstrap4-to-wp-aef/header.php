@@ -22,7 +22,7 @@
       <nav class="navbar navbar-expand-md fixed-top">
         <div class="container">
            <div class="col-sm-6">
-              <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('stylesheet_directory');?>/assets/img/AFD_smallorangelogogradient.png" class="brandlogo img-fluid"/>alsdkfa</a>
+              <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('stylesheet_directory');?>/assets/img/AFD_smallorangelogogradient.png" class="brandlogo img-fluid"/></a>
 
               <h1 style="margin-top:20px;"> <a class="brand" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"> <?php bloginfo('name'); ?></a></h1>
             </div>
