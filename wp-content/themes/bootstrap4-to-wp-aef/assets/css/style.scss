@@ -1,0 +1,78 @@
+/*!
+Theme Name: Bootstrap4wp Child 
+Theme URI: https://annfoley.com
+Author: Ann Foley
+Author URI: https://annfoley.com
+Template:     bootstrap4-to-wp
+Version:      1.0.0
+License: GNU General Public License
+License URI: license.txt
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+	font-family: proxima-nova,sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color:#222;
+} 
+
+p, 
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6  {
+    line-height:22px;
+    color:#6f6f6f;
+}
+
+// li {
+//     margin-bottom: 10px;
+// }
+h1 .brand {
+    color:#8b8b8b;
+    font-weight:300;
+    font-size:80%;
+    margin-left:20px;
+}
+
+h1 a.brand:link, h2 a.brand:visited {
+    color:#727272 !important;
+}
+
+h1 a.brand:hover, h2 a.brand:active {
+     color:#d9534f !important;
+     text-decoration:none;
+}
+
+.brandlogo {
+    width: 4rem;
+    float:left;
+}
+
+.jumbotron {
+	margin-top:2rem;
+}
+
+a:link, a:visited {
+    color:#245776;
+}
+
+a:hover, a:active {
+    color:#d9534f;
+}
+
+p a:link, p a:visited {
+    color:#0088cc;
+}
+
+a:hover, a:active {
+    color:#d9534f;
+}
+
+

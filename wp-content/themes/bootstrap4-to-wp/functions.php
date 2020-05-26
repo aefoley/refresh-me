@@ -1,17 +1,20 @@
 <?php
 
-
-// Register Custom Navigation Walker
+/**
+   * Custom navwalker
+**/
 require_once('includes/wp_bootstrap_navwalker.php');
 
+
+/**
+   * Enqueue scripts and styles
+**/
 function add_theme_scripts() {
   
   //wp_enqueue_style( 'parent-bootstrap', get_template_directory_uri().'/assets/css/bootstrap.min.css');
  
-  wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css');
+  wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css');
 
-  wp_enqueue_style( 'Roboto', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap', array('parent-bootstrap'));
- 
   wp_enqueue_script( 'main-bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array ( 'jquery' ), 4.4, true);
 
   wp_enqueue_script( 'custom-theme', get_template_directory_uri() . '/assets/js/bs4-custom.js', array ( 'jquery', 'main-bootstrap' ), 1, true);
@@ -19,10 +22,10 @@ function add_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
+
 /**
- * Define theme's widget areas.
- *
- */
+   * Define theme's widget areas.
+**/
 function bootstrapwp_widgets_init() {
 
     register_sidebar(
@@ -98,6 +101,9 @@ function bootstrapwp_widgets_init() {
 }
 add_action('init', 'bootstrapwp_widgets_init');
 
+/**
+   * Theme menus
+**/
 
 function register_aef_menus() {
   register_nav_menus(
@@ -109,7 +115,15 @@ function register_aef_menus() {
  }
  add_action( 'init', 'register_aef_menus' );
 
+/**
+   * Post thumbnails
+**/
+
 add_theme_support('post-thumbnails');
+
+/**
+   * There's an error without this, so in it goes.
+**/
 
 function twentyfifteen_comment_nav() { 
     // Are there comments to navigate through? 
