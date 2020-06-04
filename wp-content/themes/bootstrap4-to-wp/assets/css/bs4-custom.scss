@@ -113,12 +113,15 @@ body {
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
+    z-index:900;
+    padding-right:5rem;
   }
   .offcanvas-collapse.open {
     -webkit-transform: translateX(-1rem);
     transform: translateX(-1rem); /* Account for horizontal padding on navbar */
     li {
       text-align:right;
+      margin-bottom:.3rem;
     }
   }
 

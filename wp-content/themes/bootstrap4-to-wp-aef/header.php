@@ -19,13 +19,14 @@
 
   <body <?php body_class();?>>
     <header>
-      <nav class="navbar navbar-expand-md fixed-top">
+      <nav class="navbar navbar-expand-md navbar-fixed pb-3">
         <div class="container">
-           <div class="col-sm-6">
+            <div class=" col-6 ">
               <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('stylesheet_directory');?>/assets/img/AFD_smallorangelogogradient.png" class="brandlogo img-fluid"/></a>
 
               <h1 style="margin-top:20px;"> <a class="brand" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"> <?php bloginfo('name'); ?></a></h1>
             </div>
+         
             
             <button class="hamburger hamburger--squeeze navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
               <span class="hamburger-box">
@@ -44,6 +45,9 @@
                       'walker'            => new wp_bootstrap_navwalker())
                   );
               ?>
+           
         </div> <!-- Container -->
       </nav>
+      <div class="row dots"></div>
+
     </header>

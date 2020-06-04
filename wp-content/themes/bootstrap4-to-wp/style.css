@@ -8096,13 +8096,16 @@ body {
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
     -webkit-transform: translateX(100%);
-    transform: translateX(100%); }
+    transform: translateX(100%);
+    z-index: 900;
+    padding-right: 5rem; }
   .offcanvas-collapse.open {
     -webkit-transform: translateX(-1rem);
     transform: translateX(-1rem);
     /* Account for horizontal padding on navbar */ }
     .offcanvas-collapse.open li {
-      text-align: right; }
+      text-align: right;
+      margin-bottom: .3rem; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     background-color: #cdcdcd; }
   .hamburger.is-active .hamburger-inner,
