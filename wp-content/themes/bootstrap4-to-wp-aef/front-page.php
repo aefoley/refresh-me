@@ -1,6 +1,7 @@
 <?php get_header();?>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
+     <div class="row dots"></div>
     <article class="jumbotron">
       <div class="container">
         <div class="col-lg-8 offset-lg-2">
