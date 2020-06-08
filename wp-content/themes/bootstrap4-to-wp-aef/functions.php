@@ -4,16 +4,50 @@
    * Enqueue scripts and styles
 **/
 add_action( 'wp_enqueue_scripts', 'bs4aef_enqueue_styles' );
+
 function bs4aef_enqueue_styles() {
     wp_enqueue_style( 'child-style', get_stylesheet_uri(),
         array( 'parent-style' ), 
         wp_get_theme()->get('1.0.0') 
     );
-
-    wp_enqueue_style('ProximaN', 'https://use.typekit.net/zbj4hjv.css');
+  wp_enqueue_style('ProximaN', 'https://use.typekit.net/zbj4hjv.css');
 
 
 }
+
+
+
+function bs4aef_theme_child_js() {
+    wp_enqueue_script(
+        'theme_scripts',
+        get_stylesheet_directory_uri() . '/assets/js/theme-child.js',
+        array( 'jquery', 'main-bootstrap'),
+        '1.0.0', true 
+    );
+}
+
+add_action( 'wp_enqueue_scripts', 'bs4aef_theme_child_js' );
+
+
+
+
+
+
+
+
+/**
+ * Image sizes
+ *
+ */
+function setup_image_sizes(){
+
+        add_theme_support('post-thumbnails');
+        set_post_thumbnail_size(200,200, true);
+        add_image_size('300x300', 300,300, true);
+        add_image_size('600x600', 600,600, true);
+        }
+add_action('init', 'setup_image_sizes');
+
 
 // /**
 //  * Register custom post types

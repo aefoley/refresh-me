@@ -13,37 +13,44 @@
         
         <?php endwhile; endif; ?>
 
+        <a href="#work" style="text-decoration: none;"><div id="design" class="mt-5">
+            <p class="text-center bounce" style="font-size:1.3rem; color:#4e4e4e">Work</p>
+            <div class="arrow bounce"> </div>
+            <br>
+        </div> </a>
+
         </div>
     </article>
     <div class="dots2"></div>
+     <div id="work"> &nbsp; </div>
 
 
     <aside class="container mt-5">
-      <!-- Example row of columns -->
-      <div class="row">
-        <section class="col-md-4">
-           <?php
-              if (function_exists('dynamic_sidebar')) {
-                  dynamic_sidebar("home-left");
-              } 
-            ?>
-        </section>
+       <div class="row">
+         <?php
+             $args=array(
+             'post_type' => 'work',
+             'post_status' => 'publish',
+             'posts_per_page' => 8,
+             'order' => 'ASC',
+             'orderby' => 'date',
+            
+             );
+             $workQuery = new WP_Query($args);
+      
+     
+             if( $workQuery->have_posts() ) {
+             while ($workQuery->have_posts()) : $workQuery->the_post();
 
-        <section class="col-md-4">
-           <?php
-              if (function_exists('dynamic_sidebar')) {
-                  dynamic_sidebar("home-middle");
-              } 
-            ?>
-        </section>
-        <section class="col-md-4">
-          <?php
-              if (function_exists('dynamic_sidebar')) {
-                  dynamic_sidebar("home-right");
-              } 
-            ?>
-        </section>
-      </div>
+             include 'includes/landingwork-square.php';
+             endwhile;
+             }
+             wp_reset_query();
+        ?>
+     
+   
+        
+      </div> <!-- end row -->
     </aside>
 
 <?php get_footer();?>
