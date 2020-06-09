@@ -149,13 +149,17 @@ ul#menu-main-menu>li a:active {
    height:7px;
    margin-top:3px;
 }
+.bottomdots {
+  background-image:url('/wp-content/themes/bootstrap4-to-wp-aef/assets/img/bottom5.png'); 
+  height:15px;
+}
 
 p.wp-caption-text {
-  font-size: 15px;
-    margin-left: 10px;
-    margin-top: 5px;
-    font-weight: 400;
+    font-size: 14px;
+    // margin-left: 10px;
+    // margin-top: 5px;
     text-align: center;
+    font-style:italic;
 }
 
 .hovereffect {
