@@ -11,6 +11,7 @@ function bs4aef_enqueue_styles() {
         wp_get_theme()->get('1.0.0') 
     );
   wp_enqueue_style('ProximaN', 'https://use.typekit.net/zbj4hjv.css');
+  wp_enqueue_style('fancybox_css', get_stylesheet_directory_uri(). '/assets/css/jquery.fancybox.min.css');
 
 
 }
@@ -24,15 +25,13 @@ function bs4aef_theme_child_js() {
         array( 'jquery', 'main-bootstrap'),
         '1.0.0', true 
     );
+
+    wp_register_script('jquery_fancybox', get_stylesheet_directory_uri(). '/assets/js/jquery.fancybox.min.js', array('jquery'), true, true);
+    wp_enqueue_script('jquery_fancybox');
+
 }
 
 add_action( 'wp_enqueue_scripts', 'bs4aef_theme_child_js' );
-
-
-
-
-
-
 
 
 /**
