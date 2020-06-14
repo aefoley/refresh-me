@@ -300,21 +300,6 @@ transform:scale(1.1);
 
 
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {   }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }
-
-
-
-
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {  }
 
@@ -351,13 +336,13 @@ transform:scale(1.1);
     margin-bottom:1rem !important;
  }
      .hovereffect .overlay {
-      height:12%;
+      height:15%;
     }
 
 }
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { 
+@media (min-width:768px) and (max-width: 991.98px) { 
     ul#menu-main-menu>li>a{
       padding-right:.3rem !important;
       padding-left:.3rem !important;
@@ -365,11 +350,16 @@ transform:scale(1.1);
     }
 
     .hovereffect .overlay {
-      height:20%;
+      height:33%;
     }
 
  }
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {  }
+@media (min-width:992px) and (max-width: 1199.98px) { 
+
+     .hovereffect .overlay {
+      height:15%;
+    }
+ }
 

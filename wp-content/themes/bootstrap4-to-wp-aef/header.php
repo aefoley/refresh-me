@@ -27,7 +27,7 @@
               <h1 style="margin-top:8px;"> <a class="brand" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"> <?php bloginfo('name'); ?></a></h1>
             </div>
          
-            
+         
             <button class="hamburger hamburger--squeeze navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>

@@ -259,11 +259,15 @@ p.wp-caption-text {
   .page-header h1 {
     margin-bottom: 1rem !important; }
   .hovereffect .overlay {
-    height: 12%; } }
+    height: 15%; } }
 
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   ul#menu-main-menu > li > a {
     padding-right: .3rem !important;
     padding-left: .3rem !important; }
   .hovereffect .overlay {
-    height: 20%; } }
+    height: 33%; } }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hovereffect .overlay {
+    height: 15%; } }
