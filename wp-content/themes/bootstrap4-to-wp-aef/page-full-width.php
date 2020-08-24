@@ -6,8 +6,6 @@
 
 <?php get_header();?>
   
-<!--  -->
-
     <?php if ( have_posts() ) : while ( have_posts() ) :  the_post(); ?>
         <div class="container-fluid">
              <div class="row dots"></div>
@@ -20,7 +18,7 @@
             </header>
         </div>
 
-<main class="container">
+<main class="container mb-5">
     <div class="row">
         <article class="col-md-12">
                 <?php the_content() ?>

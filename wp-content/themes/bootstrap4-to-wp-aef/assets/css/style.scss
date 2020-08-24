@@ -32,18 +32,18 @@ h6  {
     font-weight:300;
 }
 
-// li {
-//     margin-bottom: 10px;
-// }
-h1 .brand,  {
-    color:#8b8b8b;
-    font-weight:300;
-    font-size:80%;
-    margin-left:20px;
+
+
+h1.site-title {
+  margin-top:12px;
+  font-size:2.2rem;
 }
 
 h1 a.brand:link, h1 a.brand:visited {
     //color:#727272 !important;
+    font-weight:300;
+    // font-size:80%;
+    margin-left:20px;
 }
 
 h1 a.brand:hover, h1 a.brand:active {
@@ -152,6 +152,7 @@ ul#menu-main-menu>li a:active {
 .bottomdots {
   background-image:url('/wp-content/themes/bootstrap4-to-wp-aef/assets/img/bottom5.png'); 
   height:15px;
+  margin-top:-15px;
 }
 
 p.wp-caption-text {
@@ -298,6 +299,48 @@ transform:scale(1.1);
   animation: bounce 1.5s 3;
 }
 
+/* Relaxing page load effects
+-------------------------------------------------- */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    //opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    //opacity: 1;
+    transform: none;
+  }
+}
+ 
+.m-scene {
+  /** Basic styles for an animated element */
+  .scene_element {
+    animation-duration: .5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+
+  /** An element that fades in */
+  .scene_element--fadein {
+    animation-name: fadeIn;
+  }
+
+  /** An element that fades in and slides up */
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+  }
+}
 
 
 // Extra small devices (portrait phones, less than 576px)
@@ -335,9 +378,18 @@ transform:scale(1.1);
   .page-header h1 {
     margin-bottom:1rem !important;
  }
-     .hovereffect .overlay {
-      height:15%;
-    }
+ .hovereffect .overlay {
+  height:15%;
+}
+
+h1.site-title {
+  font-size:1.8rem;
+  margin-top:15px;
+}
+
+h1 a.brand:link, h1 a.brand:visited {
+    margin-left:10px;
+  }
 
 }
 

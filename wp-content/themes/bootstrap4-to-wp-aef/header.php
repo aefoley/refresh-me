@@ -18,13 +18,14 @@
   </head>
 
   <body <?php body_class();?>>
+
     <header class="navbar-container-fixed">
       <nav class="navbar navbar-expand-md navbar-fixed pb-3">
         <div class="container">
             <div class=" col-9 col-sm-6 col-xl-6 ">
-              <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('stylesheet_directory');?>/assets/img/AFD_smallorangelogogradient.png" class="brandlogo img-fluid"/></a>
+              <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('stylesheet_directory');?>/assets/img/AFD_smallorangelogogradient.png" class="brandlogo img-fluid" alt="logo"/></a>
 
-              <h1 style="margin-top:8px;"> <a class="brand" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"> <?php bloginfo('name'); ?></a></h1>
+              <h1 class="site-title"> <a class="brand" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"> <?php bloginfo('name'); ?></a></h1>
             </div>
          
          
@@ -49,3 +50,4 @@
         </div> <!-- Container -->
       </nav>
     </header>
+        <!-- Main jumbotron for a primary marketing message or call to action -->

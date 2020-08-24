@@ -14,7 +14,7 @@
    <!--   <div class="dots2"></div>
  -->
   
-<main class="container">
+<main class="container mb-5">
     <div class="row">
         <article class="col-md-12">
                 <?php the_content() ?>

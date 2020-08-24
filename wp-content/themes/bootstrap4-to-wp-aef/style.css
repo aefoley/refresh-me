@@ -29,10 +29,12 @@ h6 {
   color: #4e4e4e;
   font-weight: 300; }
 
-h1 .brand {
-  color: #8b8b8b;
+h1.site-title {
+  margin-top: 12px;
+  font-size: 2.2rem; }
+
+h1 a.brand:link, h1 a.brand:visited {
   font-weight: 300;
-  font-size: 80%;
   margin-left: 20px; }
 
 h1 a.brand:hover, h1 a.brand:active {
@@ -116,7 +118,8 @@ ul#menu-main-menu > li a:active {
 
 .bottomdots {
   background-image: url("/wp-content/themes/bootstrap4-to-wp-aef/assets/img/bottom5.png");
-  height: 15px; }
+  height: 15px;
+  margin-top: -15px; }
 
 p.wp-caption-text {
   font-size: 14px;
@@ -236,6 +239,33 @@ p.wp-caption-text {
   -webkit-animation: bounce 2 1.5s 3;
   animation: bounce 1.5s 3; }
 
+/* Relaxing page load effects
+-------------------------------------------------- */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeInUp {
+  0% {
+    transform: translate3d(0, -20px, 0); }
+  100% {
+    transform: none; } }
+
+.m-scene {
+  /** Basic styles for an animated element */
+  /** An element that fades in */
+  /** An element that fades in and slides up */ }
+  .m-scene .scene_element {
+    animation-duration: .5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both; }
+  .m-scene .scene_element--fadein {
+    animation-name: fadeIn; }
+  .m-scene .scene_element--fadeinup {
+    animation-name: fadeInUp; }
+
 @media (max-width: 767.98px) {
   .dropdown-menu {
     display: block;
@@ -259,7 +289,12 @@ p.wp-caption-text {
   .page-header h1 {
     margin-bottom: 1rem !important; }
   .hovereffect .overlay {
-    height: 15%; } }
+    height: 15%; }
+  h1.site-title {
+    font-size: 1.8rem;
+    margin-top: 15px; }
+  h1 a.brand:link, h1 a.brand:visited {
+    margin-left: 10px; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   ul#menu-main-menu > li > a {
